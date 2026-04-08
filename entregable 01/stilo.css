@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+/*****************************
+AQUI PERZONALIZO MI CABECERA
+*****************************/
+.cabecera{
+    background-color: rgb(0, 0, 27);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+}
+.logo{
+    width: 100px;
+}
+.logo img{
+    height: 100px;
+}
+.menu ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+.menu a{
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu a:hover{
+    color: #f80;
+}
+.redes{
+    gap: 20px;
+    margin-left: auto;
+}
+.redes img{
+    height: 30px;
+}
+.contenido{
+    background-color: #f80;
+    width: 100%;
+    height: calc(100vh - 110px);
+}
+iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.pie_de_pagina{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    height: 100px;
+    font-weight: bolder;
+    align-content: center;
+}
+/* ***********************
+AQUI PERSONALIZO PORTADA
+*************************/ 
+.portada{
+    height: 100vh;
+    background-image: url("imagenes/portada.jpeg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.portada_texto{
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    width: 500px;
+    color: aliceblue;
+    padding: 50px;
+}
+.portada_texto h1{
+    font-size: 60px;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+.portada_texto h3{
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+.portada_texto p{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.beneficios{
+    list-style: none;
+    margin-bottom: 20px;
+}
+.beneficios li{
+    font-size: 25px;
+}
+/**************************************
+AQUI PERZONALIZO LA SECION DE SERVICIOS
+**************************************/
+.servicios-body{
+    background-image: url("imagenes/servicios/fondo_servicio.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.servicios_seccion h1{
+    background-color: #f80;
+    color: aliceblue;
+    padding: 20px 50px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom: 15px;
+
+}
+.elemento_servicio img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #f80;
+}
+.servicios_seccion h2{
+    background-color: aliceblue;
+    color: #f80;
+    padding: 10px 30px;
+    border-radius: 30px;
+    display: inline-block;
+}
+.servicio_grilla{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 30px;
+}
+.servicios_seccion{
+    text-align: center;
+    margin-top: 50px;
+}
+/**************************************
+AQUI PERSONALIZO LA SECCION DE NOSOTROS
+**************************************/
+.cabecera_nosotros{
+    position: relative;
+    width: 100%;
+}
+.cabecera_nosotros img{
+    width: 100%;
+}
+.cabecera_nosotros h1{
+    position: absolute;
+    top: 30%;
+    color: #f80;
+    font-size: 100px;
+    padding-left: 100px;
+}
+.equipo{
+    color: white;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    padding: 50px 400px;
+}
+.equipo img{
+    width: 400px;
+    border-radius: 20px;
+    border: #f80 solid 2px;
+}
+.equipo p{
+    padding-left: 150px;
+    text-align: justify;
+    font-size: larger;
+}
+.mis_vis{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    padding: 30px 100px;
+    gap: 80px;
+}
+.bloque h3{
+    color: #f80;
+}
+.bloque p{
+    text-align: justify;
+    font-size: larger;
+}
+/**************************************
+AQUI PERSONALIZO LA SECCION DE BLOG
+**************************************/
+.blog{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    padding: 50px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+.blog img{
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: #f80 solid 2px;
+}
+.imagenL{
+    text-align: right;
+    align-content: center;
+}
+
+.imagenR{
+    text-align: left;
+    align-content: center;
+}
+    
+.post{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+}
+.post h3{
+    color: #f80;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+.post p{
+    text-align: justify;
+}
+/**************************************
+AQUI PERSONALIZO LA SECCION DE contacto
+**************************************/
+.contacto{
+    min-height: 100vh;
+    background-image: url("imagenes/contacto.jpeg");
+    display: flex;
+    flex-direction: column;
+    color: white;
+    background-size: cover;
+}
+.contacto h1{
+    font-size: 70px;
+    padding-top: 40px ;
+}
+.contacto_contenedor{
+    width: 500px;
+    text-align: center;
+}
+.contacto_formulario{
+    padding-left: 80px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-content: center;
+}
+.contacto_formulario input,
+.contacto_formulario select{
+    border-radius: 40px;
+    padding: 20px;
+    border: 3px solid white ;
+    color: white;
+    background: transparent;
+    outline: none;
+}
+.contacto_formulario input::placeholder{
+    color: white;
+}
+.contacto_formulario option{
+    color: black;
+}
+.contacto_formulario button{
+
+    align-self: center;
+    padding: 15px;
+    width: 300px;
+    border: 3px solid white;
+    border-radius: 20px;
+    background-color: #f80;
+    color:white;
+    font-size: 18px;
+}
+.imgW{
+    width: 20px;
+}
+/******************************************
+AQUI hago la eeb responsive para celulares
+******************************************/
+
+@media (max-width: 768px){
+    /*responsivo portada*/
+    .cabecera{
+        flex-direction: column;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    .redes{
+        margin-left: 0;
+    }
+    .portada{
+        height: auto;
+        padding: 10px 20px;
+    }
+    .portada_texto{
+        transform: none;
+        position: static;
+        width: 100% 20px;
+        text-align: center;
+}
+
+/*responsivo servicios*/
+.servicio_grilla{
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+/*responsivo nosotros*/
+.equipo{
+    flex-direction: column;
+    padding: 50px 0px;
+}
+.equipo p{
+    padding: 20px 20px;
+}
+.equipo img{
+    width: 100%;
+}
+.mis_vis{
+    grid-template-columns: 1fr;
+}
+
+/*responsivo blog*/
+.blog{
+    grid-template-columns: 1fr;
+}
+.blog img{
+    width: 100%;
+}
+
+}
